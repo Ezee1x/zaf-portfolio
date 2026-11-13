@@ -176,11 +176,11 @@ body.is-animating .splash-logo{
   text-underline-offset: 6px;
 }
 
-/* Commercial project gallery */
+/* Project gallery */
 .project-gallery{
   margin-top: 48px;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 28px;
 }
 
@@ -192,7 +192,8 @@ body.is-animating .splash-logo{
 
 .project-card img{
   width: 100%;
-  height: min(420px, 48vw);
+  height: auto;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
   transition: transform 240ms ease;
@@ -214,11 +215,21 @@ body.is-animating .splash-logo{
   border-radius: 0;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  font-size: clamp(15px, 2.1vw, 28px);
+  font-size: clamp(12px, 1.2vw, 20px);
+  max-width: calc(100% - 20px);
+  overflow-wrap: anywhere;
   font-weight: 400;
   text-align: center;
   transform: translateY(8px);
   transition: transform 220ms ease;
+}
+
+.project-category{
+  display: block;
+  margin-top: 10px;
+  font-size: clamp(10px, 1vw, 12px);
+  letter-spacing: 0.14em;
+  line-height: 1.4;
 }
 
 .project-card:hover .project-overlay,
@@ -249,6 +260,14 @@ body.is-animating .splash-logo{
   height: 320px;
   object-fit: cover;
   display: block;
+}
+
+@media (min-width: 821px){
+  .image-grid > img:last-child:nth-child(odd){
+    grid-column: 1 / -1;
+    width: calc((100% - 18px) / 2);
+    justify-self: center;
+  }
 }
 
 .project-hero{
@@ -349,6 +368,17 @@ body.is-animating .splash-logo{
   max-width: 980px;
   margin: 0 auto;
   padding: 36px 22px 46px;
+}
+
+.page.projects-page{
+  width: 100%;
+  max-width: none;
+  padding: 20px 22px 46px;
+}
+
+.projects-page .project-gallery{
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .page h1{
@@ -628,10 +658,10 @@ body.is-animating .splash-logo{
     transform: translateX(0);
   }
   .project-gallery{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .project-card img{
-    height: 52vw;
+    height: auto;
   }
   .image-grid{
     grid-template-columns: 1fr;
@@ -692,5 +722,11 @@ body.is-animating .splash-logo{
   .site-header{
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 540px){
+  .project-gallery{
+    grid-template-columns: 1fr;
   }
 }

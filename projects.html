@@ -4,20 +4,193 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projects - Zaf Hossain</title>
-  <meta name="description" content="Projects by Zaf Hossain." />
+  <meta name="description" content="Residential, commercial, and hospitality projects by Zaf Hossain." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="projects.css" />
   <link rel="icon" type="image/png" href="assets/zaffavicon (1).png" />
 </head>
-<body>
-  <main class="landing" aria-label="Projects chooser">
-    <section class="project-choices" aria-label="Project categories">
-      <a class="project-choice left" href="commercial.html">Commercial</a>
-      <a class="project-choice right" href="residential.html">Residential</a>
+<body class="portfolio">
+  <a class="portfolio-skip" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Back to home">
+      <span class="brand-text">Zaf Hossain</span>
+    </a>
+
+    <nav class="top-nav" aria-label="Site">
+      <a href="about.html">About</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="portfolio-main" id="main-content">
+    <h1 class="portfolio-visually-hidden">Architecture &amp; Interior Design &mdash; Zaf Hossain</h1>
+    <section class="portfolio-carousel" aria-label="Featured projects" aria-roledescription="carousel">
+      <div class="portfolio-hero">
+        <a class="portfolio-slide is-active" href="greenwich.html" aria-hidden="false" tabindex="0" aria-label="Greenwich Residence, Connecticut" data-slide>
+          <img class="portfolio-hero-image" src="assets/Dingletown_CT%20-%20residential/IMG_3354.JPG" alt="Greenwich residence hallway with artwork framing a living room and fireplace" loading="eager" fetchpriority="high" />
+          <span class="portfolio-slide-title">Greenwich Residence, Connecticut</span>
+        </a>
+        <a class="portfolio-slide" href="53w.html" aria-hidden="true" tabindex="-1" aria-label="53W Penthouse, New York" data-slide>
+          <img class="portfolio-hero-image" src="assets/53w-residential/IMG_5782%20(1).jpeg" alt="53W penthouse hallway with floor-to-ceiling windows, ebony floors, and colorful wall art" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">53W Penthouse, New York</span>
+        </a>
+        <a class="portfolio-slide" href="swarovski.html" aria-hidden="true" tabindex="-1" aria-label="Swarovski Office, New York" data-slide>
+          <img class="portfolio-hero-image" src="assets/Swarovski%20-%20Commercial/swar1.jpg" alt="Swarovski project preview" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">Swarovski Head Office, New York</span>
+        </a>
+        <a class="portfolio-slide" href="st-moritz.html" aria-hidden="true" tabindex="-1" aria-label="St. Moritz Residence, St. Moritz" data-slide>
+          <img class="portfolio-hero-image" src="assets/St.%20Moritz%20-%20Residential/01_St.Moritz-1.jpg" alt="St. Moritz project preview" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">St. Moritz Residence, Switzerland</span>
+        </a>
+        <a class="portfolio-slide" href="bridgehampton.html" aria-hidden="true" tabindex="-1" aria-label="Bridgehampton Residence, The Hamptons" data-slide>
+          <img class="portfolio-hero-image" src="assets/Brigehampton%20-%20Residential/16.jpg" alt="Bridgehampton residence interior with a timber-lined hallway opening into the living and dining rooms" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">Bridgehampton Residence, The Hamptons</span>
+        </a>
+        <a class="portfolio-slide" href="paris.html" aria-hidden="true" tabindex="-1" aria-label="Paris Residence, Paris" data-slide>
+          <img class="portfolio-hero-image" src="assets/Paris%20-%20Residential/01.jpg" alt="Paris project preview" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">Paris Residence, France</span>
+        </a>
+        <a class="portfolio-slide" href="it-cosmetics.html" aria-hidden="true" tabindex="-1" aria-label="IT Cosmetics Office" data-slide>
+          <img class="portfolio-hero-image" src="assets/IT%20Cosmetics_Loreal%20-%20Commercial/IT1.JPG" alt="IT Cosmetics Loreal project preview" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">IT Cosmetics Office, New York</span>
+        </a>
+        <a class="portfolio-slide" href="kate-somerville.html" aria-hidden="true" tabindex="-1" aria-label="Kate Somerville Skin Clinic, Los Angeles" data-slide>
+          <img class="portfolio-hero-image" src="assets/kate-somerville-hospitality/PHOTO-2020-01-27-16-18-34.jpg" alt="Kate Somerville project preview" loading="lazy" decoding="async" />
+          <span class="portfolio-slide-title">Kate Somerville Skin Clinic, Los Angeles</span>
+        </a>
+      </div>
+      <div class="portfolio-carousel-controls" hidden>
+        <div class="portfolio-dots" role="group" aria-label="Choose a featured project">
+        <button class="portfolio-dot" type="button" aria-label="Show Greenwich Residence, Connecticut" aria-current="true" data-slide-index="0"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show 53W Penthouse, New York" aria-current="false" data-slide-index="1"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show Swarovski Office, New York" aria-current="false" data-slide-index="2"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show St. Moritz Residence, St. Moritz" aria-current="false" data-slide-index="3"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show Bridgehampton Residence, The Hamptons" aria-current="false" data-slide-index="4"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show Paris Residence, Paris" aria-current="false" data-slide-index="5"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show IT Cosmetics Office" aria-current="false" data-slide-index="6"></button>
+        <button class="portfolio-dot" type="button" aria-label="Show Kate Somerville Skin Clinic, Los Angeles" aria-current="false" data-slide-index="7"></button>
+        </div>
+        <button class="portfolio-carousel-toggle" type="button" aria-label="Pause slideshow" aria-pressed="false">Pause</button>
+      </div>
+    </section>
+
+    <section class="portfolio-selected" aria-labelledby="selected-projects-title">
+      <div class="portfolio-section-heading">
+        <div>
+          <h2 id="selected-projects-title">Selected Projects</h2>
+        </div>
+      </div>
+      <div class="portfolio-grid">
+        <a class="portfolio-project" href="bridgehampton.html">
+          <span class="portfolio-project-media">
+            <img src="assets/Brigehampton%20-%20Residential/bridgehampton-residence-02.jpg" alt="Bridgehampton project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">Bridgehampton</span>
+            <span class="portfolio-project-number" aria-hidden="true">01</span>
+            <span class="portfolio-project-category">Residential</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="connecticut.html">
+          <span class="portfolio-project-media">
+            <img src="assets/Dingletown_CT%20-%20residential/connecticut-project-00.png" alt="Connecticut project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">Connecticut</span>
+            <span class="portfolio-project-number" aria-hidden="true">02</span>
+            <span class="portfolio-project-category">Residential</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="paris.html">
+          <span class="portfolio-project-media">
+            <img src="assets/Paris%20-%20Residential/01.jpg" alt="Paris project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">Paris</span>
+            <span class="portfolio-project-number" aria-hidden="true">03</span>
+            <span class="portfolio-project-category">Residential</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="st-moritz.html">
+          <span class="portfolio-project-media">
+            <img src="assets/St.%20Moritz%20-%20Residential/01_St.Moritz-1.jpg" alt="St. Moritz project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">St. Moritz</span>
+            <span class="portfolio-project-number" aria-hidden="true">04</span>
+            <span class="portfolio-project-category">Residential</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="swarovski.html">
+          <span class="portfolio-project-media">
+            <img src="assets/Swarovski%20-%20Commercial/swar1.jpg" alt="Swarovski project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">Swarovski</span>
+            <span class="portfolio-project-number" aria-hidden="true">05</span>
+            <span class="portfolio-project-category">Commercial</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="it-cosmetics.html">
+          <span class="portfolio-project-media">
+            <img src="assets/IT%20Cosmetics_Loreal%20-%20Commercial/IT1.JPG" alt="IT Cosmetics Loreal project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">IT Cosmetics Loreal</span>
+            <span class="portfolio-project-number" aria-hidden="true">06</span>
+            <span class="portfolio-project-category">Commercial</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="53w.html">
+          <span class="portfolio-project-media">
+            <img src="assets/53w-residential/IMG_5777.jpeg" alt="53W project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">53W</span>
+            <span class="portfolio-project-number" aria-hidden="true">07</span>
+            <span class="portfolio-project-category">Residential</span>
+          </span>
+        </a>
+
+        <a class="portfolio-project" href="kate-somerville.html">
+          <span class="portfolio-project-media">
+            <img src="assets/kate-somerville-hospitality/PHOTO-2020-01-27-16-18-34.jpg" alt="Kate Somerville project preview" width="1200" height="900" loading="lazy" decoding="async" />
+            <span class="portfolio-project-view" aria-hidden="true">View project <span>&#8599;</span></span>
+          </span>
+          <span class="portfolio-project-caption">
+            <span class="portfolio-project-name">Kate Somerville</span>
+            <span class="portfolio-project-number" aria-hidden="true">08</span>
+            <span class="portfolio-project-category">Hospitality</span>
+          </span>
+        </a>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <small>&copy; 2026 Zafrin Hossain</small>
+  <footer class="portfolio-footer">
+    <div>
+      <a class="portfolio-footer-brand" href="index.html">Zaf Hossain</a>
+      <p>Architecture &amp; Interior Design</p>
+    </div>
+    <div class="portfolio-footer-contact">
+      <a href="mailto:zaf@zafhossain.com">zaf@zafhossain.com</a>
+      <small>&copy; 2026 Zafrin Hossain</small>
+    </div>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
